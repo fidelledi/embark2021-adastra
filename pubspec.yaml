@@ -69,5 +69,48 @@ flutter:
     - family: SFPro
       fonts:
         - asset: fonts/SF-Pro-Display-Black.otf
+    
+    - family: Calibre
+      fonts:
+        - asset: fonts/calibre_font/Calibre-Regular.otf
+        - asset: fonts/calibre_font/Calibre-RegularItalic.otf
+          style: italic
+        
+    - family: Calibre-Black
+      fonts:     
+        - asset: fonts/calibre_font/Calibre-Black.otf
+        - asset: fonts/calibre_font/Calibre-BlackItalic.otf
+          style: italic
+
+    - family: Calibre-Bold
+      fonts:    
+        - asset: fonts/calibre_font/Calibre-Bold.otf
+        - asset: fonts/calibre_font/Calibre-BoldItalic.otf
+          style: italic
+
+    - family: Calibre-Light
+      fonts:      
+        - asset: fonts/calibre_font/Calibre-Light.otf
+        - asset: fonts/calibre_font/Calibre-LightItalic.otf
+          style: italic
+
+    - family: Calibre-Medium
+      fonts:
+        - asset: fonts/calibre_font/Calibre-Medium.otf
+        - asset: fonts/calibre_font/Calibre-MediumItalic.otf
+          style: italic
+
+    - family: Calibre-Semibold
+      fonts:
+        - asset: fonts/calibre_font/Calibre-Semibold.otf
+        - asset: fonts/calibre_font/Calibre-SemiboldItalic.otf
+          style: italic
+
+    - family: Calibre-Thin
+      fonts:      
+        - asset: fonts/calibre_font/Calibre-Thin.otf
+        - asset: fonts/calibre_font/Calibre-ThinItalic.otf
+          style: italic
+
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

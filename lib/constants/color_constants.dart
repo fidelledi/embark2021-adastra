@@ -13,7 +13,7 @@ Color hexToColor(String hex) {
 
 class ColorConstants {
   static Color indexBgColor = hexToColor('#FFEED6');
-  static Color NaviColor = hexToColor('#FF6E56');
+  static Color naviColor = hexToColor('#FF6E56');
 }
 
 // //Color palettes for EMBARK according to Andre

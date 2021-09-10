@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:embark2021_adastra/constants/appBar.dart';
+import 'package:embark2021_adastra/constants/footer.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -38,11 +39,10 @@ class _IndexPageState extends State<IndexPage> {
     return Scaffold(
       backgroundColor: ColorConstants.indexBgColor,
       appBar: EmbarkAppBar(),
-      body: const Center(
-        child: Text(
-          'This is the home page',
-          style: TextStyle(fontSize: 24),
-        ),
+      body: Column(
+        children: [
+          EmbarkFooter(),
+        ],
       ),
     );
   }
