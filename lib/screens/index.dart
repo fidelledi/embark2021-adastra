@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Embark 2021 - Ad Astra: The Benildean Yearbook',
+      title: 'EMBARK 7 - Ad Astra: The Benildean Yearbook',
       home: IndexPage(),
     );
   }

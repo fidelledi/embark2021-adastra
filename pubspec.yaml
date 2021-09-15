@@ -29,6 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0 #for handling SVG files
+  url_launcher: ^6.0.10
 
 dev_dependencies:
   flutter_test:
@@ -112,6 +113,26 @@ flutter:
         - asset: fonts/calibre_font/Calibre-Thin.otf
         - asset: fonts/calibre_font/Calibre-ThinItalic.otf
           style: italic
+
+    - family: Nova-Medium
+      fonts: 
+        - asset: fonts/aesthetic_nova/nova_medium.ttf
+    
+    - family: Nova-Bold
+      fonts: 
+        - asset: fonts/aesthetic_nova/nova_bold.ttf
+
+    - family: Nova-Black
+      fonts: 
+        - asset: fonts/aesthetic_nova/nova_black.ttf
+
+    - family: Nova-Light
+      fonts: 
+        - asset: fonts/aesthetic_nova/nova_light.ttf
+
+    - family: Inter-V
+      fonts: 
+        - asset: fonts\inter_v\Inter-V.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/screens/index.dart';
+import 'package:embark2021_adastra/constants/color_constants.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,6 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        canvasColor: ColorConstants.naviColor,
+      ),
       debugShowCheckedModeBanner: true,
       home: SafeArea(child: HomeScreen()),
     );

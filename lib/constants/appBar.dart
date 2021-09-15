@@ -48,7 +48,7 @@ class _EmbarkAppBarState extends State<EmbarkAppBar> {
                 ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

@@ -58,7 +58,7 @@ class EmbarkFooterMobile extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 230,
+            top: 180,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
@@ -67,7 +67,6 @@ class EmbarkFooterMobile extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'DalaFloda',
                     fontSize: 100,
-                    height: 0.5,
                   ),
                 ),
                 Text(
@@ -81,7 +80,7 @@ class EmbarkFooterMobile extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 350,
+            top: 370,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
@@ -90,10 +89,10 @@ class EmbarkFooterMobile extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Calibre-Bold',
                     fontSize: 18,
+                    wordSpacing: 55,
                   ),
                 ),
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.end,
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Container(
