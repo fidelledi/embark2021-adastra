@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:embark2021_adastra/constants/appBar.dart';
-import 'package:embark2021_adastra/constants/footer.dart';
+import 'package:embark2021_adastra/constants/footer_desktop.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -39,17 +39,24 @@ class _IndexPageState extends State<IndexPage> {
     return Scaffold(
       backgroundColor: ColorConstants.indexBgColor,
       appBar: EmbarkAppBar(),
-      body: Column(
-        children: [
-          SizedBox(
-            height: 25,
-          ),
-          Center(child: Text('This is the body')),
-          SizedBox(
-            height: 85,
-          ),
-          EmbarkFooter(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: 25,
+            ),
+            Center(child: Text('This is the body')),
+            SizedBox(
+              height: 85,
+            ),
+            LayoutBuilder(builder: (context, constraints) {
+              // if(constraints.maxWidth < 896) {
+
+              // }
+              return EmbarkFooterDesktop();
+            })
+          ],
+        ),
       ),
     );
   }

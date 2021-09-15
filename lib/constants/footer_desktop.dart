@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class EmbarkFooter extends StatelessWidget {
+class EmbarkFooterDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -63,32 +63,34 @@ class EmbarkFooter extends StatelessWidget {
               ),
             ),
           ),
-          Positioned.fill(
-            child: Align(
-              alignment: Alignment.center,
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Text(
-                    'A',
-                    style: TextStyle(
-                      fontFamily: 'DalaFloda',
-                      fontSize: 100,
-                      height: 0.5,
+          SafeArea(
+            child: Positioned.fill(
+              child: Align(
+                alignment: Alignment.center,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: <Widget>[
+                    SizedBox(
+                      height: 15,
                     ),
-                  ),
-                  Text(
-                    '© Ad Astra: The Benildean Yearbook 2021',
-                    style: TextStyle(
-                      fontFamily: 'Calibre',
-                      fontSize: 18,
+                    Text(
+                      'A',
+                      style: TextStyle(
+                        fontFamily: 'DalaFloda',
+                        fontSize: 100,
+                        height: 0.5,
+                      ),
                     ),
-                  ),
-                ],
+                    Text(
+                      '© Ad Astra: The Benildean Yearbook 2021',
+                      style: TextStyle(
+                        fontFamily: 'Calibre',
+                        fontSize: 18,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -108,12 +110,27 @@ class EmbarkFooter extends StatelessWidget {
                         fontSize: 18,
                       ),
                     ),
-                    Text(
-                      '/adastra',
-                      style: TextStyle(
-                        fontFamily: 'Calibre',
-                        fontSize: 18,
-                      ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 20,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/footer/facebook.png'),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '/adastra',
+                          style: TextStyle(
+                            fontFamily: 'Calibre',
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
                     ),
                     Text(
                       '@theadastra',
