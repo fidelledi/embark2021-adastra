@@ -41,6 +41,13 @@ class _IndexPageState extends State<IndexPage> {
       appBar: EmbarkAppBar(),
       body: Column(
         children: [
+          SizedBox(
+            height: 25,
+          ),
+          Center(child: Text('This is the body')),
+          SizedBox(
+            height: 85,
+          ),
           EmbarkFooter(),
         ],
       ),
