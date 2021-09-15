@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
 
-class EmbarkAppBar extends StatelessWidget implements PreferredSizeWidget {
+class EmbarkAppBar extends StatefulWidget implements PreferredSizeWidget {
+  const EmbarkAppBar({Key? key}) : super(key: key);
+
+  @override
+  _EmbarkAppBarState createState() => _EmbarkAppBarState();
+
+  @override
+  // TODO: implement preferredSize
+  Size get preferredSize => Size.fromHeight(150);
+}
+
+class _EmbarkAppBarState extends State<EmbarkAppBar> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -30,7 +41,7 @@ class EmbarkAppBar extends StatelessWidget implements PreferredSizeWidget {
               child: IconButton(
                 tooltip: 'Open the Navigation Menu',
                 iconSize: 50.0,
-                onPressed: () {},
+                onPressed: () => Scaffold.of(context).openEndDrawer(),
                 icon: Icon(
                   Icons.menu,
                   color: Colors.black,
@@ -42,7 +53,4 @@ class EmbarkAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
     );
   }
-
-  @override
-  Size get preferredSize => Size.fromHeight(150);
 }
