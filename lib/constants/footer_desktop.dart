@@ -23,67 +23,36 @@ class EmbarkFooterDesktop extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Text(
+                    SelectableText(
                       'Ad Astra',
                       style: TextStyle(
                         fontFamily: 'Calibre-Bold',
                         fontSize: 18,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       'adastra@benilde.edu.ph',
                       style: TextStyle(
                         fontFamily: 'Calibre',
                         fontSize: 18,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       '2/F Br. Miguel Febres',
                       style: TextStyle(
                         fontFamily: 'Calibre',
                         fontSize: 18,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       'Cordero Bldg., DLS-CSB,',
                       style: TextStyle(
                         fontFamily: 'Calibre',
                         fontSize: 18,
                       ),
                     ),
-                    Text(
+                    SelectableText(
                       '2554 Taft Ave., Manila 1004',
-                      style: TextStyle(
-                        fontFamily: 'Calibre',
-                        fontSize: 18,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-          ),
-          SafeArea(
-            child: Positioned.fill(
-              child: Align(
-                alignment: Alignment.center,
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    SizedBox(
-                      height: 15,
-                    ),
-                    Text(
-                      'A',
-                      style: TextStyle(
-                        fontFamily: 'DalaFloda',
-                        fontSize: 100,
-                        height: 0.5,
-                      ),
-                    ),
-                    Text(
-                      '© Ad Astra: The Benildean Yearbook 2021',
                       style: TextStyle(
                         fontFamily: 'Calibre',
                         fontSize: 18,
@@ -96,14 +65,43 @@ class EmbarkFooterDesktop extends StatelessWidget {
           ),
           Positioned.fill(
             child: Align(
+              alignment: Alignment.center,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Text(
+                    'A',
+                    style: TextStyle(
+                      fontFamily: 'DalaFloda',
+                      fontSize: 100,
+                      height: 0.5,
+                    ),
+                  ),
+                  SelectableText(
+                    '© Ad Astra: The Benildean Yearbook 2021',
+                    style: TextStyle(
+                      fontFamily: 'Calibre',
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Positioned.fill(
+            child: Align(
               alignment: Alignment.centerRight,
               child: Padding(
-                padding: const EdgeInsets.only(right: 44, top: 38, bottom: 38),
+                padding: const EdgeInsets.only(right: 55, top: 38, bottom: 38),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Text(
+                    SelectableText(
                       'Socials',
                       style: TextStyle(
                         fontFamily: 'Calibre-Bold',
@@ -123,28 +121,70 @@ class EmbarkFooterDesktop extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Text(
+                        SizedBox(
+                          width: 12,
+                        ),
+                        SelectableText(
                           '/adastra',
                           style: TextStyle(
                             fontFamily: 'Calibre',
                             fontSize: 18,
+                            wordSpacing: 5,
                           ),
                         ),
                       ],
                     ),
-                    Text(
-                      '@theadastra',
-                      style: TextStyle(
-                        fontFamily: 'Calibre',
-                        fontSize: 18,
-                      ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 20,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/footer/twitter.png'),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        SelectableText(
+                          '@theadastra',
+                          style: TextStyle(
+                            fontFamily: 'Calibre',
+                            fontSize: 18,
+                            wordSpacing: 5,
+                          ),
+                        ),
+                      ],
                     ),
-                    Text(
-                      '@theadastra',
-                      style: TextStyle(
-                        fontFamily: 'Calibre',
-                        fontSize: 18,
-                      ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          width: 20,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage('assets/footer/instagram.png'),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 12,
+                        ),
+                        SelectableText(
+                          '@theadastra',
+                          style: TextStyle(
+                            fontFamily: 'Calibre',
+                            fontSize: 18,
+                            wordSpacing: 5,
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),

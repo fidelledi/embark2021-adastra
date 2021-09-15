@@ -1,3 +1,4 @@
+import 'package:embark2021_adastra/constants/footer_mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:embark2021_adastra/constants/appBar.dart';
@@ -45,15 +46,16 @@ class _IndexPageState extends State<IndexPage> {
             SizedBox(
               height: 25,
             ),
-            Center(child: Text('This is the body')),
+            Center(child: SelectableText('This is the body')),
             SizedBox(
               height: 85,
             ),
             LayoutBuilder(builder: (context, constraints) {
-              // if(constraints.maxWidth < 896) {
-
-              // }
-              return EmbarkFooterDesktop();
+              if (constraints.maxWidth < 824) {
+                return EmbarkFooterMobile();
+              } else {
+                return EmbarkFooterDesktop();
+              }
             })
           ],
         ),
