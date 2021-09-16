@@ -24,7 +24,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
         ),
         Positioned(
           left: -25,
-          top: 520,
+          top: 470,
           child: Image.asset(
             'images/index/drummer.png',
             height: 307,
@@ -32,7 +32,25 @@ class _IndexDesktopState extends State<IndexDesktop> {
           ),
         ),
         Positioned(
-          left: 215,
+          left: 320,
+          top: 480,
+          child: Image.asset(
+            'images/index/star.gif',
+            height: 201.13,
+            width: 201.13,
+          ),
+        ),
+        Positioned(
+          left: 254,
+          child: Image.asset(
+            'images/index/star.gif',
+            height: 134.04,
+            width: 134.04,
+          ),
+        ),
+        Positioned(
+          left: 190,
+          top: 350,
           child: Image.asset(
             'images/index/star.gif',
             height: 99.76,
@@ -40,7 +58,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
           ),
         ),
         Positioned(
-          left: 310,
+          left: 410,
           top: -65,
           child: Image.asset(
             'images/index/cloud_2.gif',
@@ -49,8 +67,17 @@ class _IndexDesktopState extends State<IndexDesktop> {
           ),
         ),
         Positioned(
-          left: 390,
-          top: 75,
+          left: 380,
+          top: 132,
+          child: Image.asset(
+            'images/index/flying_book_stroke.gif',
+            height: 154.97,
+            width: 154.97,
+          ),
+        ),
+        Positioned(
+          left: 430,
+          top: 90,
           child: Image.asset(
             'images/index/flying_book_peach.png',
             height: 216,
@@ -58,7 +85,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
           ),
         ),
         Positioned(
-          left: 560,
+          left: 660,
           child: Image.asset(
             'images/index/cloud_1.gif',
             height: 341,
@@ -66,12 +93,84 @@ class _IndexDesktopState extends State<IndexDesktop> {
           ),
         ),
         Positioned(
-          left: 690,
+          left: 820,
           top: -65,
           child: Image.asset(
             'images/index/star.gif',
             height: 201.13,
             width: 201.13,
+          ),
+        ),
+        Positioned(
+          left: 820,
+          top: 620,
+          child: Image.asset(
+            'images/index/star.gif',
+            height: 160.04,
+            width: 160.04,
+          ),
+        ),
+        Positioned(
+          left: 1020,
+          top: 108,
+          child: Image.asset(
+            'images/index/star.gif',
+            height: 175,
+            width: 175,
+          ),
+        ),
+        Positioned(
+          left: 1100,
+          top: -90,
+          child: Image.asset(
+            'images/index/cloud_2.gif',
+            height: 353,
+            width: 353,
+          ),
+        ),
+        Positioned(
+          left: 1110,
+          top: 500,
+          child: Image.asset(
+            'images/index/flying_book_green.png',
+            width: 122.31,
+            height: 169.01,
+          ),
+        ),
+        Positioned(
+          left: 1160,
+          top: 500,
+          child: Image.asset(
+            'images/index/flying_book_stroke.gif',
+            width: 122.31,
+            height: 169.01,
+          ),
+        ),
+        Positioned(
+          left: 1500,
+          top: 47,
+          child: Image.asset(
+            'images/index/cheerleader_2.png',
+            width: 310,
+            height: 815,
+          ),
+        ),
+        Positioned(
+          left: 810,
+          top: 480,
+          child: Image.asset(
+            'images/index/face.gif',
+            width: 1300,
+            height: 384,
+          ),
+        ),
+        Positioned(
+          left: 1750,
+          top: 108,
+          child: Image.asset(
+            'images/index/star.gif',
+            height: 175,
+            width: 175,
           ),
         ),
         Column(
@@ -164,7 +263,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
               child: BeginButton(),
             ),
             SizedBox(
-              height: 85,
+              height: 130,
             ),
           ],
         ),
