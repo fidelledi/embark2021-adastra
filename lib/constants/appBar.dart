@@ -7,8 +7,7 @@ class EmbarkAppBar extends StatefulWidget implements PreferredSizeWidget {
   _EmbarkAppBarState createState() => _EmbarkAppBarState();
 
   @override
-  // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(150);
+  Size get preferredSize => Size.fromHeight(125);
 }
 
 class _EmbarkAppBarState extends State<EmbarkAppBar> {
@@ -17,11 +16,11 @@ class _EmbarkAppBarState extends State<EmbarkAppBar> {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 44.0, vertical: 20.0),
       child: Stack(
-        fit: StackFit.expand,
+        // fit: StackFit.expand,
         children: <Widget>[
-          Container(
-            color: Colors.transparent,
-          ),
+          // Container(
+          //   color: Colors.transparent,
+          // ),
           Positioned.fill(
             child: Align(
               alignment: Alignment.centerLeft,
