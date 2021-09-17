@@ -18,6 +18,7 @@ class ColorConstants {
   static Color embarkGreen = hexToColor('#287839');
   static Color defaultButton = hexToColor('#DF634A');
   static Color newGray = hexToColor('#F5F5F5');
+  static Color newBlue = hexToColor('#3E4CA9');
 }
 
 // //Color palettes for EMBARK according to Andre

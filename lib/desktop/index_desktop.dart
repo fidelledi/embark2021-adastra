@@ -1,3 +1,4 @@
+import 'package:embark2021_adastra/screens/embark_landing.dart';
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -280,7 +281,14 @@ class BeginButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => EmbarkLanding(),
+          ),
+        );
+      },
       child: Container(
         alignment: Alignment.center,
         decoration: BoxDecoration(

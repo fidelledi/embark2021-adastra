@@ -1,3 +1,6 @@
+import 'package:embark2021_adastra/desktop/index_desktop.dart';
+import 'package:embark2021_adastra/screens/embark_landing.dart';
+import 'package:embark2021_adastra/screens/index.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:flutter/material.dart';
@@ -53,7 +56,11 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                       // USE INKWELL TO MAKE CONTAINERS CLICKABLE AND DIRECTING TO URL
                       InkWell(
                         onTap: () {
-                          _launchHome();
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HomeScreen(),
+                              ));
                         },
                         child: Container(
                           alignment: Alignment.centerRight,
@@ -71,7 +78,14 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                         height: 75,
                       ),
                       InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => EmbarkLanding(),
+                              ),
+                            );
+                          },
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: <Widget>[
@@ -227,14 +241,5 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
         ),
       ),
     );
-  }
-}
-
-_launchHome() async {
-  const url = 'https://www.theadastra.org';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
   }
 }

@@ -62,6 +62,12 @@ flutter:
     - assets/images/index/flying_book_green.png
     - assets/images/index/flying_book_peach.png
     - assets/images/index/star.gif
+    - assets/images/index/buttons/Group_128.png
+    - assets/images/landing/flying_book_green.png
+    - assets/images/landing/pixels_big.png
+    - assets/images/landing/pixels_small.png
+    - assets/images/landing/taft_sign.png
+    
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

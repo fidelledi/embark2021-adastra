@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
         canvasColor: ColorConstants.naviColor,
       ),
       debugShowCheckedModeBanner: true,
-      home: SafeArea(child: HomeScreen()),
+      home: SafeArea(child: IndexPage()),
     );
   }
 }
