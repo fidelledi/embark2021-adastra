@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: 'EMBARK 7 - Ad Astra: The Benildean Yearbook',
       theme: ThemeData(
         canvasColor: ColorConstants.naviColor,
       ),
