@@ -30,6 +30,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0 #for handling SVG files
   url_launcher: ^6.0.10
+  path_provider: ^2.0.4
+  open_file: ^3.2.1
+  syncfusion_flutter_pdfviewer: ^19.2.62-beta
 
 dev_dependencies:
   flutter_test:
@@ -67,6 +70,7 @@ flutter:
     - assets/images/landing/pixels_big.png
     - assets/images/landing/pixels_small.png
     - assets/images/landing/taft_sign.png
+    - assets/Embark_7.pdf
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

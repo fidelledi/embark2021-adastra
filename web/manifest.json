@@ -1,11 +1,11 @@
 {
-    "name": "embark2021_adastra",
+    "name": "EMBARK 7 - Ad Astra: The Benildean Yearbook",
     "short_name": "embark2021_adastra",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "EMBARK 7 (2021)",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

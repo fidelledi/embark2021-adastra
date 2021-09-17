@@ -1,7 +1,5 @@
-import 'package:embark2021_adastra/desktop/index_desktop.dart';
 import 'package:embark2021_adastra/screens/embark_landing.dart';
 import 'package:embark2021_adastra/screens/index.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';

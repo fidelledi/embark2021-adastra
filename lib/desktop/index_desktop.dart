@@ -214,6 +214,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
                         style: TextStyle(
                           fontFamily: 'Inter-V',
                           fontSize: 20,
+                          color: Colors.black,
                         ),
                       ),
                       TextSpan(
@@ -221,6 +222,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
                         style: TextStyle(
                           fontFamily: 'Inter-Bold',
                           fontSize: 20,
+                          color: Colors.black,
                         ),
                       ),
                       TextSpan(
@@ -228,6 +230,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
                         style: TextStyle(
                           fontFamily: 'Inter-V',
                           fontSize: 20,
+                          color: Colors.black,
                         ),
                       ),
                     ],
@@ -243,6 +246,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
                     style: TextStyle(
                       fontFamily: 'Inter-V',
                       fontSize: 20,
+                      color: Colors.black,
                     ),
                   ),
                   TextSpan(
@@ -250,6 +254,7 @@ class _IndexDesktopState extends State<IndexDesktop> {
                     style: TextStyle(
                       fontFamily: 'Inter-Bold',
                       fontSize: 20,
+                      color: Colors.black,
                     ),
                   ),
                 ],

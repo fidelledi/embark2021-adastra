@@ -1,12 +1,10 @@
 import 'package:embark2021_adastra/constants/footer_mobile.dart';
 import 'package:embark2021_adastra/constants/naviMenu.dart';
 import 'package:embark2021_adastra/desktop/embark_landing_desktop.dart';
-import 'package:embark2021_adastra/desktop/index_desktop.dart';
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:embark2021_adastra/constants/footer_desktop.dart';
 import 'package:embark2021_adastra/constants/appBar.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class EmbarkLanding extends StatefulWidget {
   const EmbarkLanding({Key? key}) : super(key: key);
