@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:js' as js;
 
 class EmbarkFooterDesktop extends StatelessWidget {
   @override
@@ -108,83 +109,120 @@ class EmbarkFooterDesktop extends StatelessWidget {
                         fontSize: 18,
                       ),
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 20,
-                          height: 20,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/footer/facebook.png'),
+                    InkWell(
+                      onTap: () {
+                        js.context.callMethod(
+                            'open', ['https://www.facebook.com/theadastra']);
+                      },
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 20,
+                            height: 20,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/footer/facebook.png'),
+                              ),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 12,
-                        ),
-                        SelectableText(
-                          '/adastra',
-                          style: TextStyle(
-                            fontFamily: 'Calibre',
-                            fontSize: 18,
-                            wordSpacing: 5,
+                          SizedBox(
+                            width: 6,
                           ),
-                        ),
-                      ],
+                          TextButton(
+                            onPressed: () {
+                              js.context.callMethod('open',
+                                  ['https://www.facebook.com/theadastra']);
+                            },
+                            child: Text(
+                              '/theadastra',
+                              style: TextStyle(
+                                fontFamily: 'Calibre',
+                                fontSize: 18,
+                                wordSpacing: 5,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 20,
-                          height: 20,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/footer/twitter.png'),
+                    InkWell(
+                      onTap: () {
+                        js.context.callMethod(
+                            'open', ['https://www.twitter.com/theadastra']);
+                      },
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 20,
+                            height: 20,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: AssetImage('assets/footer/twitter.png'),
+                              ),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 12,
-                        ),
-                        SelectableText(
-                          '@theadastra',
-                          style: TextStyle(
-                            fontFamily: 'Calibre',
-                            fontSize: 18,
-                            wordSpacing: 5,
+                          SizedBox(
+                            width: 6,
                           ),
-                        ),
-                      ],
+                          TextButton(
+                            onPressed: () {
+                              js.context.callMethod('open',
+                                  ['https://www.twitter.com/theadastra']);
+                            },
+                            child: Text(
+                              '@theadastra',
+                              style: TextStyle(
+                                fontFamily: 'Calibre',
+                                fontSize: 18,
+                                wordSpacing: 5,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 20,
-                          height: 20,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('assets/footer/instagram.png'),
+                    InkWell(
+                      onTap: () {
+                        js.context.callMethod(
+                            'open', ['https://www.instagram.com/theadastra']);
+                      },
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Container(
+                            width: 20,
+                            height: 20,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image:
+                                    AssetImage('assets/footer/instagram.png'),
+                              ),
                             ),
                           ),
-                        ),
-                        SizedBox(
-                          width: 12,
-                        ),
-                        SelectableText(
-                          '@theadastra',
-                          style: TextStyle(
-                            fontFamily: 'Calibre',
-                            fontSize: 18,
-                            wordSpacing: 5,
+                          SizedBox(
+                            width: 6,
                           ),
-                        ),
-                      ],
+                          TextButton(
+                            onPressed: () {
+                              js.context.callMethod('open',
+                                  ['https://www.instagram.com/theadastra']);
+                            },
+                            child: Text(
+                              '@theadastra',
+                              style: TextStyle(
+                                fontFamily: 'Calibre',
+                                fontSize: 18,
+                                wordSpacing: 5,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
