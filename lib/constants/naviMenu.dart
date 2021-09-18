@@ -103,133 +103,133 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                               )
                             ],
                           )),
-                      SizedBox(
-                        height: 75,
-                      ),
-                      InkWell(
-                        onTap: () {},
-                        child: Container(
-                          height: 75,
-                          width: 91,
-                          child: Stack(
-                            alignment: Alignment.centerRight,
-                            children: <Widget>[
-                              Positioned(
-                                top: -0.1,
-                                child: Text(
-                                  'THE',
-                                  style: TextStyle(
-                                    fontFamily: 'Nova-Medium',
-                                    fontSize: 20,
-                                    color: ColorConstants.customWhiteColor,
-                                  ),
-                                ),
-                              ),
-                              SvgPicture.asset(
-                                'icons/embark_normal_logostyle.svg',
-                                height: 12.74,
-                                width: 90.94,
-                                color: ColorConstants.customWhiteColor,
-                              ),
-                              Positioned(
-                                top: 51,
-                                child: Text(
-                                  'TEAM',
-                                  style: TextStyle(
-                                    fontFamily: 'Nova-Medium',
-                                    fontSize: 20,
-                                    color: ColorConstants.customWhiteColor,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 75,
-                      ),
-                      InkWell(
-                        onTap: () {},
-                        child: RichText(
-                          textAlign: TextAlign.right,
-                          text: TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                text: 'EDITORIAL\n',
-                                style: TextStyle(
-                                    fontFamily: 'Nova-Medium',
-                                    fontSize: 20,
-                                    color: ColorConstants.customWhiteColor),
-                              ),
-                              TextSpan(
-                                text: 'BOARD',
-                                style: TextStyle(
-                                    fontFamily: 'Nova-Medium',
-                                    fontSize: 20,
-                                    color: ColorConstants.customWhiteColor),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 75,
-                      ),
-                      InkWell(
-                        onTap: () {},
-                        child: RichText(
-                          textAlign: TextAlign.right,
-                          text: TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                text: 'ABOUT\n',
-                                style: TextStyle(
-                                    fontFamily: 'Nova-Medium',
-                                    fontSize: 20,
-                                    color: ColorConstants.customWhiteColor),
-                              ),
-                              TextSpan(
-                                text: 'AD ASTRA',
-                                style: TextStyle(
-                                    fontFamily: 'Nova-Medium',
-                                    fontSize: 20,
-                                    color: ColorConstants.customWhiteColor),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 75,
-                      ),
-                      InkWell(
-                        onTap: () {},
-                        child: RichText(
-                          textAlign: TextAlign.right,
-                          text: TextSpan(
-                            children: <TextSpan>[
-                              TextSpan(
-                                text: 'APPLY\n',
-                                style: TextStyle(
-                                    fontFamily: 'Nova-Medium',
-                                    fontSize: 20,
-                                    color: ColorConstants.customWhiteColor),
-                              ),
-                              TextSpan(
-                                text: 'TO AD ASTRA',
-                                style: TextStyle(
-                                    fontFamily: 'Nova-Medium',
-                                    fontSize: 20,
-                                    color: ColorConstants.customWhiteColor),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 55,
-                      ),
+                      // SizedBox(
+                      //   height: 75,
+                      // ),
+                      // InkWell(
+                      //   onTap: () {},
+                      //   child: Container(
+                      //     height: 75,
+                      //     width: 91,
+                      //     child: Stack(
+                      //       alignment: Alignment.centerRight,
+                      //       children: <Widget>[
+                      //         Positioned(
+                      //           top: -0.1,
+                      //           child: Text(
+                      //             'THE',
+                      //             style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 20,
+                      //               color: ColorConstants.customWhiteColor,
+                      //             ),
+                      //           ),
+                      //         ),
+                      //         SvgPicture.asset(
+                      //           'icons/embark_normal_logostyle.svg',
+                      //           height: 12.74,
+                      //           width: 90.94,
+                      //           color: ColorConstants.customWhiteColor,
+                      //         ),
+                      //         Positioned(
+                      //           top: 51,
+                      //           child: Text(
+                      //             'TEAM',
+                      //             style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 20,
+                      //               color: ColorConstants.customWhiteColor,
+                      //             ),
+                      //           ),
+                      //         ),
+                      //       ],
+                      //     ),
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: 75,
+                      // ),
+                      // InkWell(
+                      //   onTap: () {},
+                      //   child: RichText(
+                      //     textAlign: TextAlign.right,
+                      //     text: TextSpan(
+                      //       children: <TextSpan>[
+                      //         TextSpan(
+                      //           text: 'EDITORIAL\n',
+                      //           style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 20,
+                      //               color: ColorConstants.customWhiteColor),
+                      //         ),
+                      //         TextSpan(
+                      //           text: 'BOARD',
+                      //           style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 20,
+                      //               color: ColorConstants.customWhiteColor),
+                      //         ),
+                      //       ],
+                      //     ),
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: 75,
+                      // ),
+                      // InkWell(
+                      //   onTap: () {},
+                      //   child: RichText(
+                      //     textAlign: TextAlign.right,
+                      //     text: TextSpan(
+                      //       children: <TextSpan>[
+                      //         TextSpan(
+                      //           text: 'ABOUT\n',
+                      //           style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 20,
+                      //               color: ColorConstants.customWhiteColor),
+                      //         ),
+                      //         TextSpan(
+                      //           text: 'AD ASTRA',
+                      //           style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 20,
+                      //               color: ColorConstants.customWhiteColor),
+                      //         ),
+                      //       ],
+                      //     ),
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: 75,
+                      // ),
+                      // InkWell(
+                      //   onTap: () {},
+                      //   child: RichText(
+                      //     textAlign: TextAlign.right,
+                      //     text: TextSpan(
+                      //       children: <TextSpan>[
+                      //         TextSpan(
+                      //           text: 'APPLY\n',
+                      //           style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 20,
+                      //               color: ColorConstants.customWhiteColor),
+                      //         ),
+                      //         TextSpan(
+                      //           text: 'TO AD ASTRA',
+                      //           style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 20,
+                      //               color: ColorConstants.customWhiteColor),
+                      //         ),
+                      //       ],
+                      //     ),
+                      //   ),
+                      // ),
+                      // SizedBox(
+                      //   height: 55,
+                      // ),
                     ],
                   ),
                 ),

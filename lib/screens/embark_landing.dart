@@ -1,6 +1,7 @@
 import 'package:embark2021_adastra/constants/footer_mobile.dart';
 import 'package:embark2021_adastra/constants/naviMenu.dart';
 import 'package:embark2021_adastra/desktop/embark_landing_desktop.dart';
+import 'package:embark2021_adastra/mobile/embark_landing_mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:embark2021_adastra/constants/footer_desktop.dart';
@@ -26,7 +27,13 @@ class _EmbarkLanding extends State<EmbarkLanding> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            EmbarkLandingDesktop(),
+            LayoutBuilder(builder: (context, constraints) {
+              if (constraints.maxWidth < 1024) {
+                return EmbarkLandingDesktop();
+              } else {
+                return EmbarkLandingDesktop();
+              }
+            }),
             LayoutBuilder(builder: (context, constraints) {
               if (constraints.maxWidth < 824) {
                 return EmbarkFooterMobile();

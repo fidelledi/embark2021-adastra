@@ -1,6 +1,7 @@
 import 'package:embark2021_adastra/constants/footer_mobile.dart';
 import 'package:embark2021_adastra/constants/naviMenu.dart';
 import 'package:embark2021_adastra/desktop/index_desktop.dart';
+import 'package:embark2021_adastra/mobile/index_mobile.dart';
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:embark2021_adastra/constants/footer_desktop.dart';
@@ -38,7 +39,13 @@ class _IndexPageState extends State<IndexPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            IndexDesktop(),
+            LayoutBuilder(builder: (context, constraints) {
+              if (constraints.maxWidth < 824) {
+                return IndexMobile();
+              } else {
+                return IndexDesktop();
+              }
+            }),
             LayoutBuilder(builder: (context, constraints) {
               if (constraints.maxWidth < 824) {
                 return EmbarkFooterMobile();
