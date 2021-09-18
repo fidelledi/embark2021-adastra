@@ -29,7 +29,7 @@ class _EmbarkLanding extends State<EmbarkLanding> {
           children: [
             LayoutBuilder(builder: (context, constraints) {
               if (constraints.maxWidth < 1024) {
-                return EmbarkLandingDesktop();
+                return EmbarkLandingMobile();
               } else {
                 return EmbarkLandingDesktop();
               }

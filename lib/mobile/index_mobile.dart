@@ -281,8 +281,8 @@ class _IndexMobileState extends State<IndexMobile> {
               height: 42,
             ),
             Container(
-              width: 145.44,
-              height: 42.23,
+              width: 155.44,
+              height: 58.23,
               child: BeginButton(),
             ),
             SizedBox(

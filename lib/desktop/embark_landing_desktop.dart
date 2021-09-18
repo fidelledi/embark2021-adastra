@@ -195,164 +195,174 @@ class _EmbarkLandingDesktopState extends State<EmbarkLandingDesktop> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       SizedBox(
-                        height: 54,
+                        height: 162,
                         width: 268,
-                        child: TextButton(
-                          onPressed: () {},
-                          child: Container(
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                              border: Border.all(
+                      ),
+                      //     SizedBox(
+                      //       height: 54,
+                      //       width: 268,
+                      //       child: TextButton(
+                      //         onPressed: () {},
+                      //         child: Container(
+                      //           alignment: Alignment.center,
+                      //           decoration: BoxDecoration(
+                      //             border: Border.all(
+                      //               color: ColorConstants.indexBgColor,
+                      //             ),
+                      //             borderRadius: BorderRadius.all(
+                      //               Radius.circular(50),
+                      //             ),
+                      //             color: ColorConstants.indexBgColor,
+                      //           ),
+                      //           child: Text(
+                      //             'THE EMBARK TEAM',
+                      //             style: TextStyle(
+                      //               fontFamily: 'Nova-Medium',
+                      //               fontSize: 25,
+                      //               color: ColorConstants.indexBgColor,
+                      //             ),
+                      //           ),
+                      //         ),
+                      //       ),
+                      //     ),
+                      //     SizedBox(
+                      //       height: 54,
+                      //       width: 268,
+                      //       child: TextButton(
+                      //         onPressed: () {},
+                      //         child: Container(
+                      //           alignment: Alignment.center,
+                      //           decoration: BoxDecoration(
+                      //             border: Border.all(
+                      //               color: ColorConstants.indexBgColor,
+                      //             ),
+                      //             borderRadius: BorderRadius.all(
+                      //               Radius.circular(50),
+                      //             ),
+                      //             color: ColorConstants.indexBgColor,
+                      //           ),
+                      //           child: Text(
+                      //             'EDITORIAL BOARD',
+                      //             style: TextStyle(
+                      //                 fontFamily: 'Nova-Medium',
+                      //                 fontSize: 25,
+                      //                 color: ColorConstants.indexBgColor),
+                      //           ),
+                      //         ),
+                      //       ),
+                      //     ),
+                      //   ],
+                      // ),
+                      // SizedBox(
+                      //   height: 15,
+                      // ),
+                      // Row(
+                      //   mainAxisAlignment: MainAxisAlignment.center,
+                      //   children: [
+                      //     SizedBox(
+                      //       height: 54,
+                      //       width: 268,
+                      //       child: TextButton(
+                      //         onPressed: () {},
+                      //         child: Container(
+                      //           alignment: Alignment.center,
+                      //           decoration: BoxDecoration(
+                      //             border: Border.all(
+                      //               color: ColorConstants.indexBgColor,
+                      //             ),
+                      //             borderRadius: BorderRadius.all(
+                      //               Radius.circular(50),
+                      //             ),
+                      //             color: ColorConstants.indexBgColor,
+                      //           ),
+                      //           child: Text(
+                      //             'ABOUT AD ASTRA',
+                      //             style: TextStyle(
+                      //                 fontFamily: 'Nova-Medium',
+                      //                 fontSize: 25,
+                      //                 color: ColorConstants.indexBgColor),
+                      //           ),
+                      //         ),
+                      //       ),
+                      //     ),
+                      //     SizedBox(
+                      //       height: 54,
+                      //       width: 268,
+                      //       child: TextButton(
+                      //         onPressed: () {},
+                      //         child: Container(
+                      //           alignment: Alignment.center,
+                      //           decoration: BoxDecoration(
+                      //             border: Border.all(
+                      //               color: ColorConstants.indexBgColor,
+                      //             ),
+                      //             borderRadius: BorderRadius.all(
+                      //               Radius.circular(50),
+                      //             ),
+                      //             color: ColorConstants.indexBgColor,
+                      //           ),
+                      //           child: Text(
+                      //             'APPLY TO AD ASTRA',
+                      //             style: TextStyle(
+                      //                 fontFamily: 'Nova-Medium',
+                      //                 fontSize: 25,
+                      //                 color: ColorConstants.indexBgColor),
+                      //           ),
+                      //         ),
+                      //       ),
+                      //     ),
+                      //   ],
+                      // ),
+                      // SizedBox(
+                      //   height: 72,
+                      // ),
+                      Align(
+                        alignment: Alignment.bottomCenter,
+                        child: SizedBox(
+                          height: 49,
+                          width: 210,
+                          child: TextButton(
+                            onPressed: () {
+                              Navigator.pop(context);
+                            },
+                            child: Container(
+                              padding: EdgeInsets.symmetric(vertical: 6),
+                              alignment: Alignment.center,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.black,
+                                ),
+                                borderRadius: BorderRadius.all(
+                                  Radius.circular(50),
+                                ),
                                 color: ColorConstants.indexBgColor,
                               ),
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(50),
-                              ),
-                              color: ColorConstants.indexBgColor,
-                            ),
-                            child: Text(
-                              'THE EMBARK TEAM',
-                              style: TextStyle(
-                                fontFamily: 'Nova-Medium',
-                                fontSize: 25,
-                                color: ColorConstants.indexBgColor,
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Image.asset(
+                                    'images/index/buttons/Group_128.png',
+                                    width: 35,
+                                    height: 23.15,
+                                  ),
+                                  Text(
+                                    ' GO BACK',
+                                    style: TextStyle(
+                                      fontFamily: 'Nova-Medium',
+                                      fontSize: 20,
+                                      color: Colors.black,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                         ),
                       ),
                       SizedBox(
-                        height: 54,
-                        width: 268,
-                        child: TextButton(
-                          onPressed: () {},
-                          child: Container(
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: ColorConstants.indexBgColor,
-                              ),
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(50),
-                              ),
-                              color: ColorConstants.indexBgColor,
-                            ),
-                            child: Text(
-                              'EDITORIAL BOARD',
-                              style: TextStyle(
-                                  fontFamily: 'Nova-Medium',
-                                  fontSize: 25,
-                                  color: ColorConstants.indexBgColor),
-                            ),
-                          ),
-                        ),
+                        height: 181,
                       ),
                     ],
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      SizedBox(
-                        height: 54,
-                        width: 268,
-                        child: TextButton(
-                          onPressed: () {},
-                          child: Container(
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: ColorConstants.indexBgColor,
-                              ),
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(50),
-                              ),
-                              color: ColorConstants.indexBgColor,
-                            ),
-                            child: Text(
-                              'ABOUT AD ASTRA',
-                              style: TextStyle(
-                                  fontFamily: 'Nova-Medium',
-                                  fontSize: 25,
-                                  color: ColorConstants.indexBgColor),
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 54,
-                        width: 268,
-                        child: TextButton(
-                          onPressed: () {},
-                          child: Container(
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: ColorConstants.indexBgColor,
-                              ),
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(50),
-                              ),
-                              color: ColorConstants.indexBgColor,
-                            ),
-                            child: Text(
-                              'APPLY TO AD ASTRA',
-                              style: TextStyle(
-                                  fontFamily: 'Nova-Medium',
-                                  fontSize: 25,
-                                  color: ColorConstants.indexBgColor),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  // SizedBox(
-                  //   height: 72,
-                  // ),
-                  SizedBox(
-                    height: 43,
-                    width: 210,
-                    child: TextButton(
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
-                      child: Container(
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: Colors.black,
-                          ),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(50),
-                          ),
-                          color: ColorConstants.indexBgColor,
-                        ),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Image.asset(
-                              'images/index/buttons/Group_128.png',
-                              width: 35,
-                              height: 23.15,
-                            ),
-                            Text(
-                              ' GO BACK',
-                              style: TextStyle(
-                                fontFamily: 'Nova-Medium',
-                                fontSize: 20,
-                                color: Colors.black,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(
-                    height: 181,
                   ),
                 ],
               ),
