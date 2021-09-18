@@ -213,7 +213,7 @@ class _IndexMobileState extends State<IndexMobile> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset(
-                  'icons/embark_green.png',
+                  'icons/embark_black.png',
                   height: 9.83,
                   width: 72.46,
                 ),
@@ -221,7 +221,7 @@ class _IndexMobileState extends State<IndexMobile> {
                   text: TextSpan(
                     children: <TextSpan>[
                       TextSpan(
-                        text: ' is the annual Frosh publication of ',
+                        text: 'is the annual Frosh publication of ',
                         style: TextStyle(
                           fontFamily: 'Inter-V',
                           fontSize: 13,
@@ -253,7 +253,7 @@ class _IndexMobileState extends State<IndexMobile> {
                     ),
                   ),
                   TextSpan(
-                    text: 'publication of ',
+                    text: ' publication of ',
                     style: TextStyle(
                       fontFamily: 'Inter-V',
                       fontSize: 13,
@@ -312,6 +312,7 @@ class BeginButton extends StatelessWidget {
         );
       },
       child: Container(
+        padding: EdgeInsets.symmetric(vertical: 6),
         alignment: Alignment.center,
         decoration: BoxDecoration(
           border: Border.all(
