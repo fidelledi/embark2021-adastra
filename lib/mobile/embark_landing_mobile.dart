@@ -119,7 +119,7 @@ class _EmbarkLandingMobileState extends State<EmbarkLandingMobile> {
               height: 36,
             ),
             SizedBox(
-              height: 58.69,
+              height: 82.69,
               width: 251,
               child: TextButton(
                 onPressed: () {
