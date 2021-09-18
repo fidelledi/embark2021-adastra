@@ -87,11 +87,10 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             children: <Widget>[
-                              SvgPicture.asset(
-                                'icons/embark_normal_logostyle.svg',
+                              Image.asset(
+                                'icons/embark_custom_white.png',
                                 height: 12.74,
                                 width: 90.94,
-                                color: ColorConstants.customWhiteColor,
                               ),
                               Text(
                                 ' 7',

@@ -191,11 +191,10 @@ class _IndexMobileState extends State<IndexMobile> {
             SizedBox(
               height: 250,
             ),
-            SvgPicture.asset(
-              'icons/embark_normal_logostyle.svg',
-              height: 50.01,
-              width: 347.19,
-              color: ColorConstants.embarkGreen,
+            Image.asset(
+              'icons/embark_green.png',
+              height: 50,
+              width: 348,
             ),
             SizedBox(
               height: 10,
@@ -213,8 +212,8 @@ class _IndexMobileState extends State<IndexMobile> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                SvgPicture.asset(
-                  'icons/embark_normal_logostyle.svg',
+                Image.asset(
+                  'icons/embark_green.png',
                   height: 9.83,
                   width: 72.46,
                 ),
