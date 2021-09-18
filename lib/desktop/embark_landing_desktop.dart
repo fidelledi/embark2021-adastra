@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'dart:js' as js;
 
 class EmbarkLandingDesktop extends StatefulWidget {
   const EmbarkLandingDesktop({Key? key}) : super(key: key);
@@ -155,12 +156,8 @@ class _EmbarkLandingDesktopState extends State<EmbarkLandingDesktop> {
                 width: 435,
                 child: TextButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => _launchEmbark(),
-                      ),
-                    );
+                    js.context.callMethod(
+                        'open', ['http://theadastra.org/assets/Embark_7.pdf']);
                   },
                   child: Container(
                     alignment: Alignment.center,
