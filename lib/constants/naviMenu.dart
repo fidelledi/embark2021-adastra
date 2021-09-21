@@ -3,6 +3,7 @@ import 'package:embark2021_adastra/screens/index.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'dart:js' as js;
 
 class NavigationDrawer extends StatefulWidget {
   const NavigationDrawer({Key? key}) : super(key: key);
@@ -102,9 +103,9 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                               )
                             ],
                           )),
-                      // SizedBox(
-                      //   height: 75,
-                      // ),
+                      SizedBox(
+                        height: 75,
+                      ),
                       // InkWell(
                       //   onTap: () {},
                       //   child: Container(
@@ -202,30 +203,33 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                       // SizedBox(
                       //   height: 75,
                       // ),
-                      // InkWell(
-                      //   onTap: () {},
-                      //   child: RichText(
-                      //     textAlign: TextAlign.right,
-                      //     text: TextSpan(
-                      //       children: <TextSpan>[
-                      //         TextSpan(
-                      //           text: 'APPLY\n',
-                      //           style: TextStyle(
-                      //               fontFamily: 'Nova-Medium',
-                      //               fontSize: 20,
-                      //               color: ColorConstants.customWhiteColor),
-                      //         ),
-                      //         TextSpan(
-                      //           text: 'TO AD ASTRA',
-                      //           style: TextStyle(
-                      //               fontFamily: 'Nova-Medium',
-                      //               fontSize: 20,
-                      //               color: ColorConstants.customWhiteColor),
-                      //         ),
-                      //       ],
-                      //     ),
-                      //   ),
-                      // ),
+                      InkWell(
+                        onTap: () {
+                          js.context.callMethod(
+                              'open', ['http://join.theadastra.org']);
+                        },
+                        child: RichText(
+                          textAlign: TextAlign.right,
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'APPLY\n',
+                                style: TextStyle(
+                                    fontFamily: 'Nova-Medium',
+                                    fontSize: 20,
+                                    color: ColorConstants.customWhiteColor),
+                              ),
+                              TextSpan(
+                                text: 'TO AD ASTRA',
+                                style: TextStyle(
+                                    fontFamily: 'Nova-Medium',
+                                    fontSize: 20,
+                                    color: ColorConstants.customWhiteColor),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
                       // SizedBox(
                       //   height: 55,
                       // ),

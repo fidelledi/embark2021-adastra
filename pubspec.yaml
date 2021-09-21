@@ -154,11 +154,11 @@ flutter:
 
     - family: Inter-V
       fonts: 
-        - asset: fonts\inter_v\Inter-V.ttf
+        - asset: fonts/inter_v/Inter-V.ttf
 
     - family: Inter-Bold
       fonts: 
-        - asset: fonts\inter_v\Inter-Bold.ttf
+        - asset: fonts/inter_v/Inter-Bold.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
