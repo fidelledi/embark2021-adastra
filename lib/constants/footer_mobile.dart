@@ -10,7 +10,7 @@ class EmbarkFooterMobile extends StatelessWidget {
       width: double.infinity,
       child: Container(
         decoration: BoxDecoration(
-          color: ColorConstants.customWhiteColor,
+          color: Colors.white,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,

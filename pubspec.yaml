@@ -73,6 +73,8 @@ flutter:
     - assets/icons/embark_black.png
     - assets/icons/embark_custom_white.png
     - assets/icons/embark_green.png
+    - assets/icons/embark_curved.png
+    - assets/icons/embark_defaultbutton.png
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

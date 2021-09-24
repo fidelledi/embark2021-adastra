@@ -22,18 +22,21 @@ class _EmbarkLanding extends State<EmbarkLanding> {
   Widget build(BuildContext context) {
     return Scaffold(
       endDrawer: NavigationDrawer(),
-      backgroundColor: ColorConstants.indexBgColor,
+      backgroundColor: ColorConstants.customWhiteColorBG,
       appBar: EmbarkAppBar(),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            LayoutBuilder(builder: (context, constraints) {
-              if (constraints.maxWidth < 1024) {
-                return EmbarkLandingMobile();
-              } else {
-                return EmbarkLandingDesktop();
-              }
-            }),
+            Container(
+              color: ColorConstants.customWhiteColorBG,
+              child: LayoutBuilder(builder: (context, constraints) {
+                if (constraints.maxWidth < 1024) {
+                  return EmbarkLandingMobile();
+                } else {
+                  return EmbarkLandingDesktop();
+                }
+              }),
+            ),
             LayoutBuilder(builder: (context, constraints) {
               if (constraints.maxWidth < 824) {
                 return EmbarkFooterMobile();

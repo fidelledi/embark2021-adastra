@@ -157,6 +157,30 @@ class _EmbarkLandingMobileState extends State<EmbarkLandingMobile> {
               height: 35,
             ),
             Container(
+              width: 200.44,
+              height: 58.23,
+              child: TheEmbarkTeamButton(),
+            ),
+            SizedBox(
+              height: 11,
+            ),
+            Container(
+              width: 200.44,
+              height: 58.23,
+              child: AboutAdAstraButton(),
+            ),
+            SizedBox(
+              height: 11,
+            ),
+            Container(
+              width: 200.44,
+              height: 58.23,
+              child: ApplyToAdAstraButton(),
+            ),
+            SizedBox(
+              height: 35,
+            ),
+            Container(
               width: 155.44,
               height: 58.23,
               child: GoBackButton(),
@@ -324,7 +348,7 @@ class GoBackButton extends StatelessWidget {
           borderRadius: BorderRadius.all(
             Radius.circular(26),
           ),
-          color: Colors.transparent,
+          color: ColorConstants.customWhiteColorBG,
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -340,6 +364,109 @@ class GoBackButton extends StatelessWidget {
                 fontFamily: 'Nova-Medium',
                 fontSize: 13,
                 color: Colors.black,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class ApplyToAdAstraButton extends StatelessWidget {
+  const ApplyToAdAstraButton({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: () {
+        js.context.callMethod('open', ['http://join.theadastra.org']);
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 6),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: ColorConstants.embarkGreen,
+          ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(26),
+          ),
+          color: ColorConstants.customWhiteColorBG,
+        ),
+        child: Text(
+          'APPLY TO AD ASTRA',
+          style: TextStyle(
+            fontFamily: 'Nova-Medium',
+            fontSize: 17,
+            color: ColorConstants.embarkGreen,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class AboutAdAstraButton extends StatelessWidget {
+  const AboutAdAstraButton({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: () {},
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 6),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: ColorConstants.defaultButton,
+          ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(26),
+          ),
+          color: ColorConstants.customWhiteColorBG,
+        ),
+        child: Text(
+          'ABOUT AD ASTRA',
+          style: TextStyle(
+            fontFamily: 'Nova-Medium',
+            fontSize: 17,
+            color: ColorConstants.defaultButton,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class TheEmbarkTeamButton extends StatelessWidget {
+  const TheEmbarkTeamButton({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: () {},
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 6),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: ColorConstants.defaultButton,
+          ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(26),
+          ),
+          color: ColorConstants.customWhiteColorBG,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'THE EMBARK TEAM',
+              style: TextStyle(
+                fontFamily: 'Nova-Medium',
+                fontSize: 17,
+                color: ColorConstants.defaultButton,
               ),
             ),
           ],

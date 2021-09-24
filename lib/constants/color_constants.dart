@@ -15,6 +15,7 @@ class ColorConstants {
   static Color indexBgColor = hexToColor('#FFEED6');
   static Color naviColor = hexToColor('#FF6E56');
   static Color customWhiteColor = hexToColor('#FFFBEE');
+  static Color customWhiteColorBG = hexToColor('#FFFAEE');
   static Color embarkGreen = hexToColor('#287839');
   static Color defaultButton = hexToColor('#DF634A');
   static Color newGray = hexToColor('#F5F5F5');
