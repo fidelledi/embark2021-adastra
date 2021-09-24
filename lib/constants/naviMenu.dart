@@ -1,3 +1,4 @@
+import 'package:embark2021_adastra/screens/editorial_board.dart';
 import 'package:embark2021_adastra/screens/embark_landing.dart';
 import 'package:embark2021_adastra/screens/index.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
@@ -107,7 +108,14 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                         height: 75,
                       ),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => EditorialTeam(),
+                            ),
+                          );
+                        },
                         child: Container(
                           height: 75,
                           width: 91,

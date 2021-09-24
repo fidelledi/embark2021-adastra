@@ -33,7 +33,7 @@ class _EmbarkLanding extends State<EmbarkLanding> {
                 if (constraints.maxWidth < 1024) {
                   return EmbarkLandingMobile();
                 } else {
-                  return EmbarkLandingDesktop();
+                  return EmbarkLandingMobile();
                 }
               }),
             ),
