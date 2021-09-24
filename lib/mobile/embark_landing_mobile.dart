@@ -1,3 +1,4 @@
+import 'package:embark2021_adastra/screens/editorial_board.dart';
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -445,7 +446,14 @@ class TheEmbarkTeamButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => EditorialTeam(),
+          ),
+        );
+      },
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 6),
         alignment: Alignment.center,

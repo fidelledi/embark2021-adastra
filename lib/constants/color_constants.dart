@@ -20,6 +20,13 @@ class ColorConstants {
   static Color defaultButton = hexToColor('#DF634A');
   static Color newGray = hexToColor('#F5F5F5');
   static Color newBlue = hexToColor('#3E4CA9');
+  static Color newPurple = hexToColor('#3D4DA3');
+  static Color anotherGreenOne = hexToColor('#407640');
+  static Color notSoDark = hexToColor('#2B2E25');
+  static Color anotherPurpleTwo = hexToColor('#EAC6D1');
+  static Color whitishYellow = hexToColor('#FFFFF6');
+  static Color notSoGold = hexToColor('#ECB57D');
+  static Color greenFields = hexToColor('#287839');
 }
 
 // //Color palettes for EMBARK according to Andre

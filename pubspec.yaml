@@ -65,6 +65,7 @@ flutter:
     - assets/images/index/flying_book_peach.png
     - assets/images/index/star.gif
     - assets/images/index/buttons/Group_128.png
+    - assets/images/index/buttons/Group_128_white.png
     - assets/images/landing/flying_book_green.png
     - assets/images/landing/pixels_big.png
     - assets/images/landing/pixels_small.png
@@ -161,6 +162,10 @@ flutter:
     - family: Inter-Bold
       fonts: 
         - asset: fonts/inter_v/Inter-Bold.ttf
+
+    - family: Inter-Regular
+      fonts: 
+        - asset: fonts/inter_v/Inter-Regular.ttf
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
