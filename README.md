@@ -1,6 +1,6 @@
 # embark2021_adastra
 
-A new Flutter project.
+Visit http://embark7.theadastra.org/ for the live page.
 
 ## Getting Started
 
