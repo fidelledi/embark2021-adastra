@@ -69,7 +69,7 @@ class AboutAdAstra extends StatelessWidget {
           Container(
             width: 155.44,
             height: 58.23,
-            child: GoBackButton(),
+            child: GoBackButton_White(),
           ),
           SizedBox(
             height: 78,
