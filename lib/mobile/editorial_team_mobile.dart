@@ -795,7 +795,7 @@ class EditorialTeamMobile extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 64,
+                    height: 54,
                   ),
                   Container(
                     width: double.infinity,
@@ -803,7 +803,7 @@ class EditorialTeamMobile extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         SizedBox(
-                          height: 95,
+                          height: 64,
                         ),
                         RichText(
                           textAlign: TextAlign.center,
@@ -852,7 +852,7 @@ class EditorialTeamMobile extends StatelessWidget {
                           ),
                         ),
                         SizedBox(
-                          height: 85,
+                          height: 64,
                         ),
                         Container(
                           width: 155.44,
@@ -860,7 +860,7 @@ class EditorialTeamMobile extends StatelessWidget {
                           child: GoBackButton(),
                         ),
                         SizedBox(
-                          height: 95,
+                          height: 78,
                         ),
                       ],
                     ),
