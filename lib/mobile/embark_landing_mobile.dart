@@ -1,7 +1,10 @@
+import 'package:embark2021_adastra/mobile/about_adastra_mobile.dart';
 import 'package:embark2021_adastra/screens/editorial_board.dart';
+import 'package:embark2021_adastra/screens/embark_team.dart';
 import 'package:flutter/material.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:embark2021_adastra/screens/about_adastra.dart';
 import 'dart:js' as js;
 
 class EmbarkLandingMobile extends StatefulWidget {
@@ -161,6 +164,14 @@ class _EmbarkLandingMobileState extends State<EmbarkLandingMobile> {
               width: 200.44,
               height: 58.23,
               child: TheEmbarkTeamButton(),
+            ),
+            SizedBox(
+              height: 11,
+            ),
+            Container(
+              width: 200.44,
+              height: 58.23,
+              child: EditorialTeamButton(),
             ),
             SizedBox(
               height: 11,
@@ -414,7 +425,14 @@ class AboutAdAstraButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => AboutAdAstraStFul(),
+          ),
+        );
+      },
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 6),
         alignment: Alignment.center,
@@ -471,6 +489,50 @@ class TheEmbarkTeamButton extends StatelessWidget {
           children: [
             Text(
               'THE EMBARK TEAM',
+              style: TextStyle(
+                fontFamily: 'Nova-Medium',
+                fontSize: 17,
+                color: ColorConstants.defaultButton,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class EditorialTeamButton extends StatelessWidget {
+  const EditorialTeamButton({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => EmbarkTeamStFul(),
+          ),
+        );
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 6),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: ColorConstants.defaultButton,
+          ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(26),
+          ),
+          color: ColorConstants.customWhiteColorBG,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'EDITORIAL TEAM',
               style: TextStyle(
                 fontFamily: 'Nova-Medium',
                 fontSize: 17,

@@ -361,7 +361,7 @@ class EditorialTeamMobile extends StatelessWidget {
                         color: Colors.black),
                   ),
                   TextSpan(
-                    text: 'ANDRE CESAR',
+                    text: 'ANDRÉ CESAR',
                     style: TextStyle(
                       fontSize: 17,
                       fontFamily: 'Nova-Medium',
@@ -397,7 +397,15 @@ class EditorialTeamMobile extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 61,
+              height: 35,
+            ),
+            Container(
+              width: 155.44,
+              height: 58.23,
+              child: GoBackButton(),
+            ),
+            SizedBox(
+              height: 64,
             ),
             Container(
               width: double.infinity,
@@ -857,7 +865,7 @@ class EditorialTeamMobile extends StatelessWidget {
                         Container(
                           width: 155.44,
                           height: 58.23,
-                          child: GoBackButton(),
+                          child: GoBackButton_White(),
                         ),
                         SizedBox(
                           height: 78,
@@ -877,6 +885,53 @@ class EditorialTeamMobile extends StatelessWidget {
 
 class GoBackButton extends StatelessWidget {
   const GoBackButton({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: () {
+        Navigator.pop(context);
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(vertical: 6),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: ColorConstants.notSoDark,
+          ),
+          borderRadius: BorderRadius.all(
+            Radius.circular(26),
+          ),
+          color: Colors.transparent,
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'images/index/buttons/Group_128_white.png',
+              width: 22,
+              height: 16.69,
+              color: ColorConstants.notSoDark,
+            ),
+            Text(
+              '  GO BACK',
+              style: TextStyle(
+                fontFamily: 'Nova-Medium',
+                fontSize: 13,
+                color: ColorConstants.notSoDark,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class GoBackButton_White extends StatelessWidget {
+  const GoBackButton_White({
     Key? key,
   }) : super(key: key);
 
