@@ -593,7 +593,7 @@ class EditorialTeamMobile extends StatelessWidget {
                     text: TextSpan(
                       children: <TextSpan>[
                         TextSpan(
-                          text: 'DANIZE LUKBAN\n',
+                          text: 'DANIZE MARIE LUKBAN\n',
                           style: TextStyle(
                             fontSize: 17,
                             fontFamily: 'Nova-Medium',
@@ -645,7 +645,7 @@ class EditorialTeamMobile extends StatelessWidget {
                     text: TextSpan(
                       children: <TextSpan>[
                         TextSpan(
-                          text: 'ANDRE CESAR\n',
+                          text: 'ANDRÉ CESAR\n',
                           style: TextStyle(
                             fontSize: 17,
                             fontFamily: 'Nova-Medium',
@@ -705,86 +705,60 @@ class EditorialTeamMobile extends StatelessWidget {
                           ),
                         ),
                         TextSpan(
+                          text: 'Student Publications Unit\n Officer-in-Charge',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontFamily: 'Inter-Bold',
+                            color: ColorConstants.whitishYellow,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 29,
+                  ),
+                  RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: 'MS. RIZELYN LAGMAN-MANALILI\n',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontFamily: 'Nova-Medium',
+                            color: ColorConstants.anotherPurpleTwo,
+                          ),
+                        ),
+                        TextSpan(
+                          text: 'Yearbook Coordintor',
+                          style: TextStyle(
+                            fontSize: 13,
+                            fontFamily: 'Inter-Bold',
+                            color: ColorConstants.whitishYellow,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    height: 29,
+                  ),
+                  RichText(
+                    textAlign: TextAlign.center,
+                    text: TextSpan(
+                      children: <TextSpan>[
+                        TextSpan(
+                          text: 'MS. CATHERINE BUCUD-VALLES\n',
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontFamily: 'Nova-Medium',
+                            color: ColorConstants.anotherPurpleTwo,
+                          ),
+                        ),
+                        TextSpan(
                           text:
-                              'Student Publications Unit Officer-in-Charge\n Yearbook Coordinator',
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontFamily: 'Inter-Bold',
-                            color: ColorConstants.whitishYellow,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 29,
-                  ),
-                  RichText(
-                    textAlign: TextAlign.center,
-                    text: TextSpan(
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'MS. RIZELYN LAGMAN-MANALILI\n',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontFamily: 'Nova-Medium',
-                            color: ColorConstants.anotherPurpleTwo,
-                          ),
-                        ),
-                        TextSpan(
-                          text: 'Student Coordinator',
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontFamily: 'Inter-Bold',
-                            color: ColorConstants.whitishYellow,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 29,
-                  ),
-                  RichText(
-                    textAlign: TextAlign.center,
-                    text: TextSpan(
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'MS. RIZELYN LAGMAN-MANALILI\n',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontFamily: 'Nova-Medium',
-                            color: ColorConstants.anotherPurpleTwo,
-                          ),
-                        ),
-                        TextSpan(
-                          text: 'Student Coordinator',
-                          style: TextStyle(
-                            fontSize: 13,
-                            fontFamily: 'Inter-Bold',
-                            color: ColorConstants.whitishYellow,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(
-                    height: 29,
-                  ),
-                  RichText(
-                    textAlign: TextAlign.center,
-                    text: TextSpan(
-                      children: <TextSpan>[
-                        TextSpan(
-                          text: 'MS. CATHERINE BUCUD VALLES\n',
-                          style: TextStyle(
-                            fontSize: 17,
-                            fontFamily: 'Nova-Medium',
-                            color: ColorConstants.anotherPurpleTwo,
-                          ),
-                        ),
-                        TextSpan(
-                          text: 'Operations Assistant',
+                              'Student Development Coordinator\n Operations Assistant',
                           style: TextStyle(
                             fontSize: 13,
                             fontFamily: 'Inter-Bold',
@@ -821,7 +795,7 @@ class EditorialTeamMobile extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 74,
+                    height: 50,
                   ),
                   Container(
                     width: double.infinity,
@@ -841,6 +815,7 @@ class EditorialTeamMobile extends StatelessWidget {
                                   fontSize: 25,
                                   fontFamily: 'Nova-Medium',
                                   color: Colors.white,
+                                  height: 2.5,
                                 ),
                               ),
                               TextSpan(
@@ -850,6 +825,7 @@ class EditorialTeamMobile extends StatelessWidget {
                                   fontSize: 13,
                                   fontFamily: 'Inter-Regular',
                                   color: ColorConstants.whitishYellow,
+                                  height: 2.0,
                                 ),
                               ),
                               TextSpan(
@@ -859,6 +835,7 @@ class EditorialTeamMobile extends StatelessWidget {
                                   fontSize: 13,
                                   fontFamily: 'Inter-Regular',
                                   color: ColorConstants.whitishYellow,
+                                  height: 2.0,
                                 ),
                               ),
                               TextSpan(
@@ -868,13 +845,14 @@ class EditorialTeamMobile extends StatelessWidget {
                                   fontSize: 13,
                                   fontFamily: 'Inter-Regular',
                                   color: ColorConstants.whitishYellow,
+                                  height: 2.0,
                                 ),
                               ),
                             ],
                           ),
                         ),
                         SizedBox(
-                          height: 142,
+                          height: 100,
                         ),
                         Container(
                           width: 155.44,
