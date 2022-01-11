@@ -1,4 +1,4 @@
-# embark2021_adastra
+# Embark 2021 - Ad Astra: The Benildean Yearbook
 
 Visit http://embark7.theadastra.org/ for the live page.
 
