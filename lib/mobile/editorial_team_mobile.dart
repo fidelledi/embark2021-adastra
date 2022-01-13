@@ -731,7 +731,7 @@ class EditorialTeamMobile extends StatelessWidget {
                     text: TextSpan(
                       children: <TextSpan>[
                         TextSpan(
-                          text: 'MS. RIZELYN LAGMAN-MANALILI\n',
+                          text: 'MS. RIZALYN LAGMAN-MANALILI\n',
                           style: TextStyle(
                             fontSize: 17,
                             fontFamily: 'Nova-Medium',

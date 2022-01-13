@@ -1,9 +1,10 @@
 import 'package:embark2021_adastra/screens/editorial_board.dart';
+import 'package:embark2021_adastra/screens/about_adastra.dart';
 import 'package:embark2021_adastra/screens/embark_landing.dart';
+import 'package:embark2021_adastra/screens/embark_team.dart';
 import 'package:embark2021_adastra/screens/index.dart';
 import 'package:embark2021_adastra/constants/color_constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'dart:js' as js;
 
 class NavigationDrawer extends StatefulWidget {
@@ -156,60 +157,74 @@ class _NavigationDrawerState extends State<NavigationDrawer> {
                       SizedBox(
                         height: 75,
                       ),
-                      // InkWell(
-                      //   onTap: () {},
-                      //   child: RichText(
-                      //     textAlign: TextAlign.right,
-                      //     text: TextSpan(
-                      //       children: <TextSpan>[
-                      //         TextSpan(
-                      //           text: 'EDITORIAL\n',
-                      //           style: TextStyle(
-                      //               fontFamily: 'Nova-Medium',
-                      //               fontSize: 20,
-                      //               color: ColorConstants.customWhiteColor),
-                      //         ),
-                      //         TextSpan(
-                      //           text: 'BOARD',
-                      //           style: TextStyle(
-                      //               fontFamily: 'Nova-Medium',
-                      //               fontSize: 20,
-                      //               color: ColorConstants.customWhiteColor),
-                      //         ),
-                      //       ],
-                      //     ),
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   height: 75,
-                      // ),
-                      // InkWell(
-                      //   onTap: () {},
-                      //   child: RichText(
-                      //     textAlign: TextAlign.right,
-                      //     text: TextSpan(
-                      //       children: <TextSpan>[
-                      //         TextSpan(
-                      //           text: 'ABOUT\n',
-                      //           style: TextStyle(
-                      //               fontFamily: 'Nova-Medium',
-                      //               fontSize: 20,
-                      //               color: ColorConstants.customWhiteColor),
-                      //         ),
-                      //         TextSpan(
-                      //           text: 'AD ASTRA',
-                      //           style: TextStyle(
-                      //               fontFamily: 'Nova-Medium',
-                      //               fontSize: 20,
-                      //               color: ColorConstants.customWhiteColor),
-                      //         ),
-                      //       ],
-                      //     ),
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   height: 75,
-                      // ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => EmbarkTeamStFul(),
+                            ),
+                          );
+                        },
+                        child: RichText(
+                          textAlign: TextAlign.right,
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'EDITORIAL\n',
+                                style: TextStyle(
+                                    fontFamily: 'Nova-Medium',
+                                    fontSize: 20,
+                                    color: ColorConstants.customWhiteColor),
+                              ),
+                              TextSpan(
+                                text: 'BOARD',
+                                style: TextStyle(
+                                    fontFamily: 'Nova-Medium',
+                                    fontSize: 20,
+                                    color: ColorConstants.customWhiteColor),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 75,
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => AboutAdAstraStFul(),
+                            ),
+                          );
+                        },
+                        child: RichText(
+                          textAlign: TextAlign.right,
+                          text: TextSpan(
+                            children: <TextSpan>[
+                              TextSpan(
+                                text: 'ABOUT\n',
+                                style: TextStyle(
+                                    fontFamily: 'Nova-Medium',
+                                    fontSize: 20,
+                                    color: ColorConstants.customWhiteColor),
+                              ),
+                              TextSpan(
+                                text: 'AD ASTRA',
+                                style: TextStyle(
+                                    fontFamily: 'Nova-Medium',
+                                    fontSize: 20,
+                                    color: ColorConstants.customWhiteColor),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 75,
+                      ),
                       InkWell(
                         onTap: () {
                           js.context.callMethod(
