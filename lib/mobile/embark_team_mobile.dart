@@ -314,7 +314,7 @@ class EmbarkTeamMobile extends StatelessWidget {
                   ),
                 ),
                 TextSpan(
-                  text: 'Student Publications Unit\n Officer-in-Charge',
+                  text: 'Yearbook Coordinator',
                   style: TextStyle(
                     fontSize: 13,
                     fontFamily: 'Inter-Bold',
@@ -340,7 +340,7 @@ class EmbarkTeamMobile extends StatelessWidget {
                   ),
                 ),
                 TextSpan(
-                  text: 'Yearbook Coordintor',
+                  text: 'Student Development Coordinator',
                   style: TextStyle(
                     fontSize: 13,
                     fontFamily: 'Inter-Bold',
@@ -366,8 +366,7 @@ class EmbarkTeamMobile extends StatelessWidget {
                   ),
                 ),
                 TextSpan(
-                  text:
-                      'Student Development Coordinator\n Operations Assistant',
+                  text: 'Operations Assistant',
                   style: TextStyle(
                     fontSize: 13,
                     fontFamily: 'Inter-Bold',
